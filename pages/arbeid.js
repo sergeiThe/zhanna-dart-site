@@ -2,15 +2,15 @@ import TEXT from '../data/text'
 import { useRouter } from 'next/router'
 import { Button, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
-import styles from "../module-styles/About.module.scss"
+import styles from "../module-styles/Work.module.scss"
 
-const About = () => {
-    const title = TEXT.about.title
-    const paragraph = TEXT.about.paragraph
+const Work = () => {
+    const title = TEXT.work.title
+    const paragraph = TEXT.work.paragraph
     const router = useRouter()
 
     const goFurtherHandler = () => {
-        router.push("/arbeid")
+        router.push("/tjenester")
     }
     const goBackHandler = () => {
         router.back();
@@ -24,7 +24,6 @@ const About = () => {
             </video>
             <div className={styles['content-wrapper']}>
                 <div className={styles['inner-wrapper']}>
-
                     <div className={styles.title}>
                         <PageTitle value={title} />
                     </div>
@@ -33,7 +32,7 @@ const About = () => {
                     </div>
                     <div className={styles.button}>
                         <Button value="Gå tilbake" onClick={goBackHandler} />
-                        <Button value="Se mitt arbeid" onClick={goFurtherHandler} />
+                        <Button value="Se mine tjenester" onClick={goFurtherHandler} />
                     </div>
                 </div>
             </div>
@@ -42,4 +41,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Work

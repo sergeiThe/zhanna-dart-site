@@ -7,10 +7,18 @@ h1 {
     font-weight: 300;
 
     font-size: 5rem;
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 }
 
 p {
     color: $text-color-primary;
     font-family: $font-family-primary;
     font-size: 1rem;
+
+    @include respond(phone) {
+        padding: 0 2rem;
+    }
 }

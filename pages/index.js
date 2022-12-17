@@ -4,6 +4,38 @@ import { Button, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
 import styles from "../module-styles/Home.module.scss"
 import { BsScissors } from "react-icons/bs"
+import { motion } from 'framer-motion'
+
+const bgVariants = {
+  initialState: {
+    x: -100
+  },
+  animateState: {
+    x: 0,
+    transition: {
+      delayChildren: 4,
+      duration: 2,
+      delay: 0.5
+    }
+  },
+  exitState: {
+
+  }
+}
+
+const titleVariants = {
+  initialState: {
+    opacity: 0,
+    x: -100
+  },
+  animateState: {
+    opacity: 1,
+    x: 0
+  },
+  exitState: {
+
+  }
+}
 
 
 export default function Home() {
@@ -21,20 +53,49 @@ export default function Home() {
       <video className='background' controls autoPlay loop muted style={{ width: '100%' }}>
         <source src='/video.MOV' />
       </video>
-      <div className={styles['content-wrapper']}>
+      <motion.div
+        className={styles['content-wrapper']}
+        variants={bgVariants}
+        initial="initialState"
+        animate="animateState"
+        exit="exitState"
+        transition={{
+          duration: 1,
+          delay: 1
+        }}
+      >
         <div className={styles.icon}>
-          <BsScissors/>
+          <BsScissors />
         </div>
-        <div className={styles.title}>
+        <motion.div
+          className={styles.title}
+          variants={titleVariants}
+          initial="initialState"
+          animate="animateState"
+          exit="exitState"
+          
+        >
           <PageTitle value={title} />
-        </div>
-        <div className={styles.paragraph}>
+        </motion.div>
+        <motion.div
+          className={styles.paragraph}
+          variants={titleVariants}
+          initial="initialState"
+          animate="animateState"
+          exit="exitState"
+          >
           <Paragraph value={paragraph} />
-        </div>
-        <div className={styles.button}>
+        </motion.div>
+        <motion.div
+          className={styles.button}
+          variants={titleVariants}
+          initial="initialState"
+          animate="animateState"
+          exit="exitState"
+          >
           <Button value="Gå videre" onClick={goFurtherHandler} />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Section>
   )
 }
