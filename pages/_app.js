@@ -1,6 +1,6 @@
-import '../styles/globals.css'
 import { useRouter } from 'next/router'
 import { AnimatePresence, motion } from 'framer-motion'
+import '../styles/index.scss'
 
 const variants = {
   initialState: {
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         initial="initialState"
         animate="animateState"
         exit="exitState"
-        transition={{duration: 0.5}}
+        transition={{duration: 0.2}}
         variants={variants}
       >
         <Component {...pageProps} />

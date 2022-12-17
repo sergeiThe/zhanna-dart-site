@@ -1,0 +1,20 @@
+.btn {
+    background-color: transparent;
+    padding: 15px 35px;
+
+    font-weight: 700;
+
+    border-radius: 100px;
+    border: 2px solid $bg-color-primary;
+    color: $bg-color-primary;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $bg-color-primary;
+        color: $bg-color-secondary;
+    }
+}
+

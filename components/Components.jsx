@@ -1,7 +1,8 @@
 import React from "react";
 
+
 export function Button({ value, onClick, styleType }) {
-    return <button onClick={onClick}>{value}</button>;
+    return <button className="btn" onClick={onClick}>{value}</button>;
 }
 
 export function PageTitle({ value }) {

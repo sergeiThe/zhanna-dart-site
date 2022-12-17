@@ -1,7 +1,9 @@
 import TEXT from '../data/text'
 import { useRouter } from 'next/router'
 import { Button, PageTitle, Paragraph } from '../components/Components'
-
+import Section from '../components/Section'
+import styles from "../module-styles/Home.module.scss"
+import { BsScissors } from "react-icons/bs"
 
 
 export default function Home() {
@@ -15,13 +17,24 @@ export default function Home() {
   }
 
   return (
-    <section style={{overflow: 'hidden'}}>
-      <video controls autoPlay loop muted style={{width: '100%'}}>
-        <source src='/video.MOV'/>
+    <Section>
+      <video className='background' controls autoPlay loop muted style={{ width: '100%' }}>
+        <source src='/video.MOV' />
       </video>
-      <PageTitle value={title}/>
-      <Paragraph value={paragraph}/>
-      <Button value="Gå videre" onClick={goFurtherHandler} />
-    </section>
+      <div className={styles['content-wrapper']}>
+        <div className={styles.icon}>
+          <BsScissors/>
+        </div>
+        <div className={styles.title}>
+          <PageTitle value={title} />
+        </div>
+        <div className={styles.paragraph}>
+          <Paragraph value={paragraph} />
+        </div>
+        <div className={styles.button}>
+          <Button value="Gå videre" onClick={goFurtherHandler} />
+        </div>
+      </div>
+    </Section>
   )
 }
