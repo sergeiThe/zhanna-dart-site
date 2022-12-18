@@ -1,7 +1,12 @@
 body {
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
+
+    @include respond(phone) {
+        overflow-y: scroll;
+    }
 }
 
 section {
