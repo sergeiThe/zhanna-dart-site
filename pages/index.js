@@ -6,36 +6,7 @@ import styles from "../module-styles/Home.module.scss"
 import { BsScissors } from "react-icons/bs"
 import { motion } from 'framer-motion'
 
-const bgVariants = {
-  initialState: {
-    x: -100
-  },
-  animateState: {
-    x: 0,
-    transition: {
-      delayChildren: 4,
-      duration: 2,
-      delay: 0.5
-    }
-  },
-  exitState: {
-
-  }
-}
-
-const titleVariants = {
-  initialState: {
-    opacity: 0,
-    x: -100
-  },
-  animateState: {
-    opacity: 1,
-    x: 0
-  },
-  exitState: {
-
-  }
-}
+import { bgVariants, titleVariants, iconVariants, btnVariants, paragraphVariants } from '../animations/homePage'
 
 
 export default function Home() {
@@ -59,42 +30,49 @@ export default function Home() {
         initial="initialState"
         animate="animateState"
         exit="exitState"
-        transition={{
-          duration: 1,
-          delay: 1
-        }}
+    
       >
-        <div className={styles.icon}>
-          <BsScissors />
+        <div className={styles['inner-wrapper']}>
+
+          <motion.div
+            className={styles.icon}
+            variants={iconVariants}
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+          >
+            <BsScissors />
+          </motion.div>
+          <motion.div
+            className={styles.title}
+            variants={titleVariants}
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+
+          >
+            <PageTitle value={title} />
+          </motion.div>
+          <motion.div
+            className={styles.paragraph}
+            variants={paragraphVariants}
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+            
+          >
+            <Paragraph value={paragraph} />
+          </motion.div>
+          <motion.div
+            className={styles.button}
+            variants={btnVariants}
+            initial="initialState"
+            animate="animateState"
+            exit="exitState"
+          >
+            <Button value="Gå videre" onClick={goFurtherHandler} />
+          </motion.div>
         </div>
-        <motion.div
-          className={styles.title}
-          variants={titleVariants}
-          initial="initialState"
-          animate="animateState"
-          exit="exitState"
-          
-        >
-          <PageTitle value={title} />
-        </motion.div>
-        <motion.div
-          className={styles.paragraph}
-          variants={titleVariants}
-          initial="initialState"
-          animate="animateState"
-          exit="exitState"
-          >
-          <Paragraph value={paragraph} />
-        </motion.div>
-        <motion.div
-          className={styles.button}
-          variants={titleVariants}
-          initial="initialState"
-          animate="animateState"
-          exit="exitState"
-          >
-          <Button value="Gå videre" onClick={goFurtherHandler} />
-        </motion.div>
       </motion.div>
     </Section>
   )

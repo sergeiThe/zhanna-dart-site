@@ -1,3 +1,4 @@
+@import "../styles/mixins.scss";
 .icon {
     color: #fff;
     font-size: 5rem;
@@ -43,4 +44,7 @@
     width: 600px;
     margin: 0 auto;
     
+    @include respond(phone) {
+        width: 100%;
+    }
 }
