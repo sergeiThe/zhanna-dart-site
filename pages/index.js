@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Section>
       <video className='background' controls autoPlay loop muted>
-        <source src='/video.MOV' />
+        <source src='/video1.mp4' type='video/mp4'/>
       </video>
       <div
         className='home-content-wrapper'
