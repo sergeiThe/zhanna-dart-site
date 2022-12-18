@@ -38,7 +38,8 @@ export const iconVariants = {
         opacity: 1,
         transition: {
             duration: 0.5,
-            delay: 0.5
+            delay: 3,
+            ease: "easeOut"
         }
     },
     exitState: {
@@ -49,15 +50,15 @@ export const iconVariants = {
 export const titleVariants = {
     initialState: {
         opacity: 0,
-        x: -100
+        x: -50
     },
     animateState: {
         opacity: 1,
         x: 0,
         transition: {
             duration: 2,
+            delay: 0.5,
             ease: "easeOut",
-            delay: 1
         }
     },
     exitState: {
@@ -68,15 +69,15 @@ export const titleVariants = {
 export const paragraphVariants = {
     initialState: {
         opacity: 0,
-        x: 100
+        x: 50
     },
     animateState: {
         opacity: 1,
         x: 0,
         transition: {
             duration: 2,
+            delay: 0.5,
             ease: "easeOut",
-            delay: 1
         }
     },
     exitState: {
@@ -87,14 +88,14 @@ export const paragraphVariants = {
 export const btnVariants = {
     initialState: {
         opacity: 0,
-        y: 50
+        y: 15
     },
     animateState: {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
-            delay: 2.5,
+            duration: 1,
+            delay: 2.0,
             ease: "easeOut"
         }
     },

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { Button, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
 import { BsScissors } from "react-icons/bs"
-import { motion } from 'framer-motion'
+import { motion as m } from 'framer-motion'
 
 import { bgVariants, titleVariants, iconVariants, btnVariants, paragraphVariants } from '../animations/homePage'
 import Link from 'next/link'
@@ -29,32 +29,38 @@ export default function Home() {
       >
         <div className='home-inner-wrapper'>
 
-          <div
+          <m.div
             className="home-icon"
-
+            variants={iconVariants}
+            initial="initialState"
+            animate="animateState"
           >
             <BsScissors />
-          </div>
-          <div
+          </m.div>
+          <m.div
             className="home-title"
-
-
+            variants={titleVariants}
+            initial="initialState"
+            animate="animateState"
           >
             <PageTitle value={title} />
-          </div>
-          <div
+          </m.div>
+          <m.div
             className="home-paragraph"
-
-
+            variants={paragraphVariants}
+            initial="initialState"
+            animate="animateState"
           >
             <Paragraph value={paragraph} />
-          </div>
-          <div
+          </m.div>
+          <m.div
             className="home-button"
-
+            variants={btnVariants}
+            initial="initialState"
+            animate="animateState"
           >
             <Button value="Gå videre" onClick={goFurtherHandler} />
-          </div>
+          </m.div>
         </div>
       </div>
     </Section>
