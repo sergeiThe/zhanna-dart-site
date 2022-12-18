@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { pageVariants } from '../animations/homePage'
 import Section from '../components/Section'
 import '../styles/index.scss'
+import Hamburger from '../components/Hamburger'
 
 // const variants = {
 //   initialState: {
@@ -24,11 +25,14 @@ import '../styles/index.scss'
 // }
 
 function MyApp({ Component, pageProps, router }) {
-  
+
   return (
-    <AnimatePresence mode='wait'>
-      <Component key={router.pathname} {...pageProps} />
-    </AnimatePresence>
+    <>
+      <Hamburger />
+      <AnimatePresence mode='wait'>
+        <Component key={router.pathname} {...pageProps} />
+      </AnimatePresence>
+    </>
 
 
   )
