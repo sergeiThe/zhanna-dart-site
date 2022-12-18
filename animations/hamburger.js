@@ -8,6 +8,7 @@ export const lineVariants = {
         x: 0
     },
     exitState: {
-        opacity: 0
+        opacity: 0,
+        x: -1000
     }
 }

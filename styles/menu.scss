@@ -1,0 +1,35 @@
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    width: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.638), rgb(135, 76, 76)), url('../public/menupic.jpg');
+    background-size: cover;
+    height: 100vh;
+
+    border-left: double rgb(250, 250, 250) 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(phone) {
+        width: 100%;
+        border-left: none;
+    }
+}
+
+.nav {
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+
+    justify-content: center;
+    align-items: center;
+}

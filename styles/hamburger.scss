@@ -1,7 +1,7 @@
 .hamburger {
     position: fixed;
     width: 40px;
-    height: 17px;
+    height: 40px;
 
     top: 30px;
     right: 30px;
@@ -28,18 +28,44 @@
         top: 0;
         left: 0;
         width: 100%;
+        animation: slideInRight 0.2s ease-in 3s backwards;
     }
 
     &-2 {
-        top: 50%;
+        top: 25%;
         left: 40%;
         width: 60%;
+        animation: slideInRight 0.2s ease-in 3.1s backwards;
     }
 
     &-3 {
-        top: 100%;
+        top: 51%;
         left: 0;
         width: 70%;
+        animation: slideInRight 0.2s ease-in 3.2s backwards;
     }
 }
 
+.open {
+    &-1 {
+        transform: translateY(10px) rotate(45deg) ;
+    }
+    &-2 {
+        opacity: 0;
+    }
+    &-3 {
+        transform:translateY(-10px) rotate(-45deg);
+        width: 100%;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}

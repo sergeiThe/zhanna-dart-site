@@ -20,3 +20,15 @@ p {
     // padding: 1rem 0;
 
 }
+
+a {
+    color: $text-color-primary;
+    font-family: $font-family-primary;
+    font-size: 1.5rem;
+
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -4,6 +4,8 @@ import { pageVariants } from '../animations/homePage'
 import Section from '../components/Section'
 import '../styles/index.scss'
 import Hamburger from '../components/Hamburger'
+import Menu from '../components/Menu'
+import MenuContextProvider from '../store/menu-ctx'
 
 // const variants = {
 //   initialState: {
@@ -28,10 +30,13 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
-      <Hamburger />
-      <AnimatePresence mode='wait'>
-        <Component key={router.pathname} {...pageProps} />
-      </AnimatePresence>
+      <MenuContextProvider>
+        <Hamburger />
+        <Menu />
+        <AnimatePresence mode='wait'>
+          <Component key={router.pathname} {...pageProps} />
+        </AnimatePresence>
+      </MenuContextProvider>
     </>
 
 
