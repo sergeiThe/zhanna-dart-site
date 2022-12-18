@@ -23,6 +23,9 @@ function Menu() {
             >
                 <nav className="nav">
                     <ul className="nav-list">
+                    <Link href="/" onClick={toggleHandler}>
+                            <li className="nav-item">Hjem</li>
+                        </Link>
                         <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Om meg</li>
                         </Link>

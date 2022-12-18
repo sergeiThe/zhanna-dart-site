@@ -15,9 +15,11 @@ const TEXT = {
     }, 
     services: {
         title: "Tjenester",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+        paragraph: "Jeg har alltid hatt en lidenskap for hår og skjønnhet, og jeg er dedikert til å hjelpe kundene mine til å se og føle seg best mulig."
     },
     contact: {
+        title: "Kontakt",
+        paragraph: "Jeg er så takknemlig for å ha muligheten til å gjøre det jeg elsker hver dag, og jeg er alltid glad for å møte nye kunder og hjelpe dem med å nå hårmålene sine. Takk for at du vurderer meg for dine hårpleiebehov. Jeg håper å se deg i stolen min snart!",
         phone: "+4745809985",
         address: "Bersvendveita 16, Trondheim",
         facebookLink: "https://www.facebook.com/ZhannaD.Art.as",
