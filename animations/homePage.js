@@ -10,7 +10,7 @@ export const bgVariants = {
         }
     },
     exitState: {
-
+        opacity: 0
     }
 }
 
@@ -26,7 +26,7 @@ export const iconVariants = {
         }
     },
     exitState: {
-
+        opacity: 0
     }
 }
 
@@ -45,7 +45,7 @@ export const titleVariants = {
         }
     },
     exitState: {
-
+        opacity: 0
     }
 }
 
@@ -64,7 +64,7 @@ export const paragraphVariants = {
         }
     },
     exitState: {
-
+        opacity: 0
     }
 }
 
@@ -83,6 +83,6 @@ export const btnVariants = {
         }
     },
     exitState: {
-
+        opacity: 0
     }
 }
