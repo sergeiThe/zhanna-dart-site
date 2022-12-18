@@ -22,7 +22,7 @@ const About = () => {
             <video className='background' controls autoPlay loop muted style={{ width: '100%' }}>
                 <source src='/video.MOV' />
             </video>
-            <div className={styles['content-wrapper']}>
+            <div className={styles['content-wrapper']} style={{display: "flex"}}>
                 <div className={styles['inner-wrapper']}>
 
                     <div className={styles.title}>
