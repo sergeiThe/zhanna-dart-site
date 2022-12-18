@@ -11,7 +11,7 @@ const TEXT = {
     },
     work: {
         title: "Mitt arbeid",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it"
+        paragraph: "Jeg er forpliktet til å tilby et innbydende og behagelig miljø for alle mine kunder. Jeg tar meg tid til å lytte til dine bekymringer og preferanser for å skape et utseende som er perfekt for deg."
     }, 
     services: {
         title: "Tjenester",

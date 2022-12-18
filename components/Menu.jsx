@@ -26,14 +26,17 @@ function Menu() {
                         <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Om meg</li>
                         </Link>
-                        <Link href="/om-meg" onClick={toggleHandler}>
+                        <Link href="/arbeid" onClick={toggleHandler}>
                             <li className="nav-item">Mitt arbeid</li>
                         </Link>
-                        <Link href="/om-meg" onClick={toggleHandler}>
+                        <Link href="/tjenester" onClick={toggleHandler}>
                             <li className="nav-item">Tjenester</li>
                         </Link>
-                        <Link href="/om-meg" onClick={toggleHandler}>
+                        <Link href="/kontakt" onClick={toggleHandler}>
                             <li className="nav-item">Kontakt</li>
+                        </Link>
+                        <Link href="https://zhannadart.onlinebooq.net/" onClick={toggleHandler}>
+                            <li className="nav-item">Bestill</li>
                         </Link>
                     </ul>
                 </nav>
