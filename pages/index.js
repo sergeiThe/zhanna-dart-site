@@ -2,7 +2,6 @@ import TEXT from '../data/text'
 import { useRouter } from 'next/router'
 import { Button, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
-import styles from "../module-styles/Home.module.scss"
 import { BsScissors } from "react-icons/bs"
 import { motion } from 'framer-motion'
 
@@ -26,32 +25,32 @@ export default function Home() {
         <source src='/video.MOV' />
       </video>
       <div
-        className={styles['content-wrapper']}
+        className='home-content-wrapper'
       >
-        <div className={styles['inner-wrapper']}>
+        <div className='home-inner-wrapper'>
 
           <div
-            className={styles.icon}
+            className="home-icon"
 
           >
             <BsScissors />
           </div>
           <div
-            className={styles.title}
+            className="home-title"
 
 
           >
             <PageTitle value={title} />
           </div>
           <div
-            className={styles.paragraph}
+            className="home-paragraph"
 
 
           >
             <Paragraph value={paragraph} />
           </div>
           <div
-            className={styles.button}
+            className="home-button"
 
           >
             <Button value="Gå videre" onClick={goFurtherHandler} />
