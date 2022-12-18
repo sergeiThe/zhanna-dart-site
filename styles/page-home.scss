@@ -30,6 +30,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(phone) {
+        height: 100%;
+    }
 }
 
 .home-inner-wrapper {
