@@ -27,11 +27,6 @@ export default function Home() {
       </video>
       <div
         className={styles['content-wrapper']}
-        variants={bgVariants}
-        initial="initialState"
-        animate="animateState"
-        exit="exitState"
-
       >
         <div className={styles['inner-wrapper']}>
 
