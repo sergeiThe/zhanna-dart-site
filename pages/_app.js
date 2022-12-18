@@ -23,12 +23,11 @@ import '../styles/index.scss'
 //   }
 // }
 
-function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  console.log(router.route)
+function MyApp({ Component, pageProps, router }) {
+  
   return (
     <AnimatePresence mode='wait'>
-      <Component key={router.route} {...pageProps} />
+      <Component key={router.pathname} {...pageProps} />
     </AnimatePresence>
 
 
