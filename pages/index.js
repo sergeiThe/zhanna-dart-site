@@ -7,6 +7,7 @@ import { BsScissors } from "react-icons/bs"
 import { motion } from 'framer-motion'
 
 import { bgVariants, titleVariants, iconVariants, btnVariants, paragraphVariants } from '../animations/homePage'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -24,56 +25,45 @@ export default function Home() {
       <video className='background' controls autoPlay loop muted style={{ width: '100%' }}>
         <source src='/video.MOV' />
       </video>
-      <motion.div
+      <div
         className={styles['content-wrapper']}
         variants={bgVariants}
         initial="initialState"
         animate="animateState"
         exit="exitState"
-    
+
       >
         <div className={styles['inner-wrapper']}>
 
-          <motion.div
+          <div
             className={styles.icon}
-            variants={iconVariants}
-            initial="initialState"
-            animate="animateState"
-            exit="exitState"
+
           >
             <BsScissors />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.title}
-            variants={titleVariants}
-            initial="initialState"
-            animate="animateState"
-            exit="exitState"
+
 
           >
             <PageTitle value={title} />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.paragraph}
-            variants={paragraphVariants}
-            initial="initialState"
-            animate="animateState"
-            exit="exitState"
-            
+
+
           >
             <Paragraph value={paragraph} />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className={styles.button}
-            variants={btnVariants}
-            initial="initialState"
-            animate="animateState"
-            exit="exitState"
+
           >
             <Button value="Gå videre" onClick={goFurtherHandler} />
-          </motion.div>
+            <Link href="/om-meg" style={{color: "white"}}>Om meg</Link>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </Section>
   )
 }
