@@ -69,7 +69,7 @@ export const titleVariants = {
 export const paragraphVariants = {
     initialState: {
         opacity: 0,
-        x: 50
+        x: 30
     },
     animateState: {
         opacity: 1,

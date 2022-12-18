@@ -26,7 +26,7 @@ import '../styles/index.scss'
 function MyApp({ Component, pageProps, router }) {
   
   return (
-    <AnimatePresence mode='wait' initial={false}>
+    <AnimatePresence mode='wait'>
       <Component key={router.pathname} {...pageProps} />
     </AnimatePresence>
 
