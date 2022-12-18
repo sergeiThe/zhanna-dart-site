@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <Section>
-      <video className='background' controls autoPlay loop muted style={{ width: '100%' }}>
+      <video className='background' controls autoPlay loop muted>
         <source src='/video.MOV' />
       </video>
       <div
