@@ -10,4 +10,14 @@
             @content;
         }
     }
+    @if ($bp == laptop) {
+        @media screen and (max-width: 1300px) {
+            @content;
+        }
+    }
+    @if ($bp == tablet) {
+        @media screen and (max-width: 900px) {
+            @content;
+        }
+    }
 }

@@ -1,57 +1,64 @@
-.about-icon {
-    color: #fff;
-    font-size: 5rem;
-    text-align: center;
 
-    padding: 13vh 0 2rem 0;
-}
 .about-section {
-    background: url('../public/aboutbg_compressed.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(26, 26, 26, 0.837)), url('../public/aboutbg_compressed.jpg');
     background-size: cover;
     background-position: center center;
-    overflow-y: scroll;
+
+    padding: 10rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    @include respond(laptop) {
+        padding: 8rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 2rem;
+    }
 }
 
 .about-video {
-    width: 400px;
+    width: 300px;
     border-radius: 50px;
     border: 3px solid white;
+
+    @include respond(tablet) {
+        width: 100%;
+    }
 }
 
 .about-title {
-    text-align: center;
+    text-align: left;
 
     padding-bottom: 1rem;
 }
 
 .about-paragraph {
-    text-align: center; 
-
+    text-align: left; 
+    max-width: 500px;
     padding: 1rem 0;
 }
 
 .about-button {
-    text-align: center;
-
+    text-align: left;
+    margin-left: -10px;
     padding: 1rem 0;
 }
 
-.about-content-wrapper {
-    background-color: rgba(0, 0, 0, 0.838);
-
-
+.about-wrapper {
+   
     display: flex;
+    width: 100%;
+    max-width: 1100px;
+    gap: 5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+        flex-direction: column;
+    }
 }
 
-.about-inner-wrapper {
-
-    flex-basis: 600px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-}

@@ -11,6 +11,10 @@ h1 {
     @include respond(phone) {
         font-size: 3rem;
     }
+
+    @include respond(laptop) {
+        font-size: 3rem;
+    }
 }
 
 p {

@@ -24,9 +24,9 @@ const About = () => {
 
         <Section className={'about-section'}>
 
-            <div className='about-content-wrapper'>
-                <div className='about-inner-wrapper'>
+            <div className='about-wrapper'>
 
+                <div className='about-content-wrapper'>
                     <div className="about-title">
                         <PageTitle value={title} />
                     </div>
@@ -39,9 +39,6 @@ const About = () => {
                         <Paragraph value={paragraph1} />
 
                     </m.div>
-                    <video className='about-video' controls autoPlay playsInline loop muted preload='metadata'>
-                        <source src='/video1.mp4' type='video/mp4' />
-                    </video>
                     <m.div className="about-paragraph"
                         variants={paragraphVariants}
                         initial="initialState"
@@ -57,9 +54,13 @@ const About = () => {
                         <Button value="Gå tilbake" onClick={goBackHandler} />
                         <Button value="Se mitt arbeid" onClick={goFurtherHandler} />
                     </m.div>
-                </div>
-            </div>
 
+                </div>
+                <video className='about-video' controls autoPlay playsInline loop muted preload='metadata'>
+                    <source src='/video1.mp4' type='video/mp4' />
+                </video>
+
+            </div>
         </Section>
     )
 }
