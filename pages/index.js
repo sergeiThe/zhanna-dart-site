@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <Section>
-      <video id="videoBG" className='background' controls autoPlay playsInline loop muted preload='metadata'>
+      <video id="videoBG" className='background' autoPlay playsInline loop muted preload='metadata'>
         <source src='/video1.mp4' type='video/mp4'/>
       </video>
       <div

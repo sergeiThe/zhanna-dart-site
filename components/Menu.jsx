@@ -6,6 +6,11 @@ import { AnimatePresence, motion as m } from "framer-motion";
 function Menu() {
     const ctx = useContext(MenuCtx);
 
+    const toggleHandler = () => {
+        ctx.toggleMenu();
+        
+    };
+
     return (
         <AnimatePresence>
             {ctx.isOpen && (
@@ -18,16 +23,16 @@ function Menu() {
             >
                 <nav className="nav">
                     <ul className="nav-list">
-                        <Link href="/om-meg">
+                        <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Om meg</li>
                         </Link>
-                        <Link href="/om-meg">
+                        <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Mitt arbeid</li>
                         </Link>
-                        <Link href="/om-meg">
+                        <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Tjenester</li>
                         </Link>
-                        <Link href="/om-meg">
+                        <Link href="/om-meg" onClick={toggleHandler}>
                             <li className="nav-item">Kontakt</li>
                         </Link>
                     </ul>

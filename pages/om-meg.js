@@ -4,6 +4,7 @@ import { Button, PageTitle, Paragraph } from '../components/Components'
 import { motion as m } from 'framer-motion'
 import Section from '../components/Section'
 import { paragraphVariants, btnVariants } from '../animations/aboutPage'
+import Image from 'next/image'
 
 
 const About = () => {
@@ -21,11 +22,8 @@ const About = () => {
     }
     return (
 
-        <Section>
+        <Section className={'about-section'}>
 
-            <video className='background' controls playsInline autoPlay loop muted style={{ width: '100%' }}>
-                <source src='/video1.mp4' type='video/mp4' />
-            </video>
             <div className='about-content-wrapper'>
                 <div className='about-inner-wrapper'>
 
@@ -41,6 +39,9 @@ const About = () => {
                         <Paragraph value={paragraph1} />
 
                     </m.div>
+                    <video className='about-video' controls autoPlay playsInline loop muted preload='metadata'>
+                        <source src='/video1.mp4' type='video/mp4' />
+                    </video>
                     <m.div className="about-paragraph"
                         variants={paragraphVariants}
                         initial="initialState"
