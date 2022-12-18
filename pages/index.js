@@ -19,9 +19,12 @@ export default function Home() {
     router.push("/om-meg")
   }
 
+  // const video = document.querySelector('#id')
+  // video.play()
+
   return (
     <Section>
-      <video className='background' controls autoPlay loop muted>
+      <video id="videoBG" className='background' controls autoPlay playsInline loop muted preload='metadata'>
         <source src='/video1.mp4' type='video/mp4'/>
       </video>
       <div
