@@ -1,5 +1,4 @@
-@import "../styles/mixins.scss";
-.icon {
+.about-icon {
     color: #fff;
     font-size: 5rem;
     text-align: center;
@@ -7,41 +6,40 @@
     padding: 13vh 0 2rem 0;
 }
 
-.title {
+.about-title {
     text-align: center;
 
     padding-bottom: 1rem;
 }
 
-.paragraph {
+.about-paragraph {
     text-align: center; 
 
     padding: 1rem 0;
 }
 
-.button {
+.about-button {
     text-align: center;
 
     padding: 1rem 0;
 }
 
-.content-wrapper {
+.about-content-wrapper {
     background-color: rgba(0, 0, 0, 0.838);
 
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-inner-wrapper {
+
+    flex-basis: 600px;
 
     display: flex;
     flex-direction: column;
+
+    align-items: center;
     justify-content: center;
-
-    
-
-}
-
-.inner-wrapper {
-    width: 600px;
-    margin: 0 auto;
-    @include respond(phone) {
-        width: 100%;
-    }
 }

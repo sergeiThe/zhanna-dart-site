@@ -54,7 +54,6 @@ export default function Home() {
 
           >
             <Button value="Gå videre" onClick={goFurtherHandler} />
-            <Link href="/om-meg" style={{color: "white"}}>Om meg</Link>
           </div>
         </div>
       </div>

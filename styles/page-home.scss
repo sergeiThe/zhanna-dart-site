@@ -3,7 +3,7 @@
     font-size: 5rem;
     text-align: center;
 
-    padding: 13vh 0 2rem 0;
+
 }
 
 .home-title {
@@ -28,7 +28,9 @@
     background-color: rgba(0, 0, 0, 0.838);
 
     height: 100vh;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-inner-wrapper {
