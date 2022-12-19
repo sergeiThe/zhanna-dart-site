@@ -42,6 +42,15 @@ const Work = () => {
                         <Link href="/kontakt" className="btn btn-secondary">Kontakt</Link>
                         <Link target="_blank" rel="noopener noreferrer" href="https://zhannadart.onlinebooq.net/" className="btn btn-primary">Bestill</Link>
                     </m.div>
+                    <m.div className="work-paragraph"
+                        variants={paragraphVariants}
+                        initial="initialState"
+                        animate="animateState"
+                        transition={{ duration: 2, delay: 1.5, ease: "easeOut" }}
+                    >
+                        <Paragraph value={"Swipe til høyre for å sammenligne 'før' og 'etter'"} />
+
+                    </m.div>
 
                 </div>
                 <div className='work-images-container'>
