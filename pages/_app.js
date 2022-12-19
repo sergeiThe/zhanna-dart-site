@@ -7,14 +7,18 @@ import Hamburger from '../components/Hamburger'
 import Menu from '../components/Menu'
 import MenuContextProvider from '../store/menu-ctx'
 import BookButton from '../components/BookButton'
+import Head from 'next/head'
 
 
 function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
+      <Head>
+        <link rel="icon" type="image/ico" href="/favicon.ico"/>
+      </Head>
       <MenuContextProvider>
-        <BookButton/>
+        <BookButton />
         <Hamburger />
         <Menu />
         <AnimatePresence mode='wait'>

@@ -20,8 +20,8 @@ const TEXT = {
     contact: {
         title: "Kontakt",
         paragraph: "Jeg er så takknemlig for å ha muligheten til å gjøre det jeg elsker hver dag, og jeg er alltid glad for å møte nye kunder og hjelpe dem med å nå hårmålene sine. Takk for at du vurderer meg for dine hårpleiebehov. Jeg håper å se deg i stolen min snart!",
-        phone: "+4745809985",
-        address: "Bersvendveita 16, Trondheim",
+        phone: "+47 458 09 985",
+        address: "Mellomveien 16, 7042 Trondheim",
         facebookLink: "https://www.facebook.com/ZhannaD.Art.as",
         instagramLink: "https://www.instagram.com/zhannadart",
 
