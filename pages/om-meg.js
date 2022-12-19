@@ -29,7 +29,7 @@ const About = () => {
                         variants={paragraphVariants}
                         initial="initialState"
                         animate="animateState"
-                        transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
+                        transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
                     >
                         <Paragraph value={paragraph1} />
 
@@ -38,7 +38,7 @@ const About = () => {
                         variants={paragraphVariants}
                         initial="initialState"
                         animate="animateState"
-                        transition={{ duration: 2, delay: 1.5, ease: "easeOut" }}>
+                        transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}>
 
                         <Paragraph value={paragraph2} />
                     </m.div>

@@ -15,7 +15,8 @@ const TEXT = {
     }, 
     services: {
         title: "Tjenester",
-        paragraph: "Jeg har alltid hatt en lidenskap for hår og skjønnhet, og jeg er dedikert til å hjelpe kundene mine til å se og føle seg best mulig."
+        paragraph1: "Jeg har alltid hatt en lidenskap for hår og skjønnhet, og jeg er dedikert til å hjelpe kundene mine til å se og føle seg best mulig.",
+        paragraph2: "NB! Pris kan variere utfra hårets lengde og tykkelse."
     },
     contact: {
         title: "Kontakt",

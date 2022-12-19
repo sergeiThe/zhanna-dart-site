@@ -11,7 +11,8 @@ import ServiceList from '../components/ServiceList'
 
 const Services = () => {
     const title = TEXT.services.title
-    const paragraph = TEXT.services.paragraph
+    const paragraph1 = TEXT.services.paragraph1
+    const paragraph2 = TEXT.services.paragraph2
 
     const router = useRouter()
 
@@ -35,7 +36,7 @@ const Services = () => {
                         animate="animateState"
                         transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
                     >
-                        <Paragraph value={paragraph} />
+                        <Paragraph value={paragraph1} />
 
                     </m.div>
                     <m.div className="services-button"
@@ -45,7 +46,15 @@ const Services = () => {
                         <Link href="/arbeid" className="btn btn-secondary">Se mitt arbeid</Link>
 
                     </m.div>
+                    <m.div className="services-paragraph"
+                        variants={paragraphVariants}
+                        initial="initialState"
+                        animate="animateState"
+                        transition={{ duration: 2, delay: 4, ease: "easeOut" }}
+                    >
+                        <Paragraph value={paragraph2} />
 
+                    </m.div>
                 </div>
                 <div className='services-images-container'>
                     <ServiceList />
