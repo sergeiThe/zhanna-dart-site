@@ -43,7 +43,7 @@ const Services = () => {
                         variants={btnVariants}
                         initial="initialState"
                         animate="animateState">
-                        <Link href="/arbeid" className="btn btn-secondary">Se mitt arbeid</Link>
+                        <Link href="/arbeid" className="btn btn-primary">Se mitt arbeid</Link>
 
                     </m.div>
                     <m.div className="services-paragraph"
