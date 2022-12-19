@@ -36,3 +36,25 @@
     }
 }
 
+
+.btn-book {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+
+    z-index: 100;
+
+    color: $bg-color-primary;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 5px;
+
+    .icon {
+        transform: rotate(90deg);
+    }
+}

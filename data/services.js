@@ -33,7 +33,6 @@ const services = [
     new Service("Bryn korreksjon/farging", 370, false),
     new Service("Bryn korreskjon/farging av henna", 420, false),
     new Service("Make up", 750, false),
-    new Service("Bryn korreskjon/farging av henna", 420, false),
     new Service("Herreklipp uten vask", 460, false),
     new Service("Herreklipp med vask", 500, false),
     new Service("Klipp pannelugg", 170, false),

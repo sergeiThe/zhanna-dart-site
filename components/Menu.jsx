@@ -38,7 +38,7 @@ function Menu() {
                         <Link href="/kontakt" onClick={toggleHandler}>
                             <li className="nav-item">Kontakt</li>
                         </Link>
-                        <Link href="https://zhannadart.onlinebooq.net/" onClick={toggleHandler}>
+                        <Link target="_blank" rel="noopener noreferrer" href="https://zhannadart.onlinebooq.net/" onClick={toggleHandler}>
                             <li className="nav-item">Bestill</li>
                         </Link>
                     </ul>
