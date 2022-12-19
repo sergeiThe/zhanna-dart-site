@@ -1,8 +1,8 @@
 .carousel {
     overflow: hidden;
     cursor: grab;
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 300px;
 
     border-radius: 10px;
     border: 1px solid white;
@@ -13,10 +13,9 @@
 
 .inner-carousel {
     display: flex;
-    width: 750px;
+    width: 600px;
     height: 100%;
-   
-    
+
 }
 
 
