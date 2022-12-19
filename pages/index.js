@@ -1,6 +1,6 @@
 import TEXT from '../data/text'
 import { useRouter } from 'next/router'
-import { Button, PageTitle, Paragraph } from '../components/Components'
+import { Button, MyLink, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
 import { BsScissors } from "react-icons/bs"
 import { motion as m } from 'framer-motion'
@@ -13,14 +13,6 @@ export default function Home() {
 
   const title = TEXT.homePage.title
   const paragraph = TEXT.homePage.paragraph
-  const router = useRouter()
-
-  const goFurtherHandler = () => {
-    router.push("/om-meg")
-  }
-
-  // const video = document.querySelector('#id')
-  // video.play()
 
   return (
     <Section>
@@ -62,7 +54,7 @@ export default function Home() {
             initial="initialState"
             animate="animateState"
           >
-            <Button value="Gå videre" onClick={goFurtherHandler} />
+            <Link href="/om-meg" className="btn btn-primary">Gå videre</Link>
           </m.div>
         </div>
       </div>

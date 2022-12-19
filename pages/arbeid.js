@@ -4,6 +4,7 @@ import { Button, PageTitle, Paragraph } from '../components/Components'
 import { motion as m } from 'framer-motion'
 import Section from '../components/Section'
 import { paragraphVariants, btnVariants } from '../animations/aboutPage'
+import Link from 'next/link'
 
 
 
@@ -13,9 +14,6 @@ const Work = () => {
 
     const router = useRouter()
 
-    const goFurtherHandler = () => {
-        router.push("/tjenester")
-    }
     
     return (
 
@@ -40,7 +38,8 @@ const Work = () => {
                         variants={btnVariants}
                         initial="initialState"
                         animate="animateState">
-                        <Button value="Tjenester" onClick={goFurtherHandler} />
+                        <Link href="/om-meg" className="btn btn-secondary">Kontakt</Link>
+                        <Link href="https://zhannadart.onlinebooq.net/" className="btn btn-primary">Bestill</Link>
                     </m.div>
 
                 </div>

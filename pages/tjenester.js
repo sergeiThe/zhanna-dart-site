@@ -5,6 +5,7 @@ import { motion as m } from 'framer-motion'
 import Section from '../components/Section'
 import { paragraphVariants, btnVariants } from '../animations/aboutPage'
 import Link from 'next/link'
+import ServiceList from '../components/ServiceList'
 
 
 
@@ -17,7 +18,7 @@ const Services = () => {
     const goFurtherHandler = () => {
         router.push("/kontakt")
     }
-    
+
     return (
 
         <Section className={'services-section'}>
@@ -41,13 +42,13 @@ const Services = () => {
                         variants={btnVariants}
                         initial="initialState"
                         animate="animateState">
-                        <Link href="/kontakt" className="btn">Kontakt</Link>
-                        <Link href="https://zhannadart.onlinebooq.net/" className="btn">Bestill</Link>
+                        <Link href="/arbeid" className="btn btn-secondary">Se mitt arbeid</Link>
+
                     </m.div>
 
                 </div>
                 <div className='services-images-container'>
-                    list of services
+                    <ServiceList />
                 </div>
 
             </div>

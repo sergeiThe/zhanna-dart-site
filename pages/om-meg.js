@@ -4,14 +4,15 @@ import { Button, PageTitle, Paragraph } from '../components/Components'
 import { motion as m } from 'framer-motion'
 import Section from '../components/Section'
 import { paragraphVariants, btnVariants } from '../animations/aboutPage'
-import Image from 'next/image'
+import Link from 'next/link'
+
 
 
 const About = () => {
     const title = TEXT.about.title
     const paragraph1 = TEXT.about.paragraphOne
     const paragraph2 = TEXT.about.paragraphTwo
-    const paragraph3 = TEXT.about.paragraphThree
+
     const router = useRouter()
 
     const goFurtherHandler = () => {
@@ -51,8 +52,7 @@ const About = () => {
                         variants={btnVariants}
                         initial="initialState"
                         animate="animateState">
-                        <Button value="Gå tilbake" onClick={goBackHandler} />
-                        <Button value="Se mitt arbeid" onClick={goFurtherHandler} />
+                         <Link href="/tjenester" className="btn btn-primary">Tjenester</Link>
                     </m.div>
 
                 </div>

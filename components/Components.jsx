@@ -1,9 +1,5 @@
+import Link from "next/link";
 import React from "react";
-
-
-export function Button({ value, onClick, styleType }) {
-    return <button className="btn" onClick={onClick}>{value}</button>;
-}
 
 export function PageTitle({ value }) {
     return <h1>{value}</h1>;

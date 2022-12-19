@@ -1,5 +1,5 @@
 .btn {
-    background-color: transparent;
+
     padding: 15px 35px;
     margin: 0 10px;
 
@@ -8,11 +8,27 @@
 
     border-radius: 100px;
     border: 2px solid $bg-color-primary;
-    color: $bg-color-primary;
 
     cursor: pointer;
 
     transition: all 0.2s;
+
+    
+}
+
+.btn-primary {
+    background-color: $bg-color-primary;
+    color: black;
+
+    &:hover {
+        background-color: transparent;
+        color: $bg-color-primary;
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: $bg-color-primary;
 
     &:hover {
         background-color: $bg-color-primary;

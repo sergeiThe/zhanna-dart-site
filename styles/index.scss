@@ -8,11 +8,14 @@
 @import "./background.scss";
 
 // Pages global css
-
 @import "./page-home.scss";
 @import "./page-about.scss";
-@import "./hamburger.scss";
-@import "./menu.scss";
 @import "./page-work.scss";
 @import "./page-services.scss";
 @import "./page-contact.scss";
+
+
+// Components css
+@import "./hamburger.scss";
+@import "./menu.scss";
+@import "./service-list.scss";

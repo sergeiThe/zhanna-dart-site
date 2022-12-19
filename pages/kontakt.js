@@ -19,9 +19,6 @@ const Contact = () => {
 
     const router = useRouter()
 
-    const goFurtherHandler = () => {
-        router.push("/kontakt")
-    }
     
     return (
 
@@ -47,7 +44,7 @@ const Contact = () => {
                         initial="initialState"
                         animate="animateState">
                         
-                        <Link href="https://zhannadart.onlinebooq.net/" className="btn">Bestill</Link>
+                        <Link href="https://zhannadart.onlinebooq.net/" className="btn btn-primary">Bestill</Link>
                     </m.div>
                     <m.div className="contact-info">
                         <Paragraph value={phone}/>
