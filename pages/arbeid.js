@@ -38,7 +38,7 @@ const Work = () => {
                         variants={btnVariants}
                         initial="initialState"
                         animate="animateState">
-                        <Link href="/om-meg" className="btn btn-secondary">Kontakt</Link>
+                        <Link href="/kontakt" className="btn btn-secondary">Kontakt</Link>
                         <Link href="https://zhannadart.onlinebooq.net/" className="btn btn-primary">Bestill</Link>
                     </m.div>
 
