@@ -1,6 +1,6 @@
 
 .work-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(26, 26, 26, 0.837)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(26, 26, 26, 0.837)), 
     url('../public/workbg.jpg');
     background-size: cover;
     background-position: center center;
@@ -58,7 +58,12 @@
 
 
 .work-images-container {
-    background-color: pink;
+    // background-color: pink;
     height: 400px;
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
 }
