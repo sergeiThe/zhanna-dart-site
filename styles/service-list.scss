@@ -2,6 +2,10 @@
     list-style: none;
     color: $bg-color-primary;
     font-family: $font-family-primary;
+
+    @include respond(phone) {
+        font-size: 80%;
+    }
 }
 
 .service-list-item {
