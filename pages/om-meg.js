@@ -15,12 +15,6 @@ const About = () => {
 
     const router = useRouter()
 
-    const goFurtherHandler = () => {
-        router.push("/arbeid")
-    }
-    const goBackHandler = () => {
-        router.back();
-    }
     return (
 
         <Section className={'about-section'}>
@@ -56,7 +50,7 @@ const About = () => {
                     </m.div>
 
                 </div>
-                <video className='about-video' controls autoPlay playsInline loop muted preload='metadata'>
+                <video className='about-video' autoPlay playsInline loop muted preload='metadata'>
                     <source src='/video1.mp4' type='video/mp4' />
                 </video>
 
