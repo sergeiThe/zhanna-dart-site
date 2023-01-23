@@ -10,7 +10,9 @@ import BookButton from '../components/BookButton'
 import Head from 'next/head'
 
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
+
+  const router = useRouter()
 
   return (
     <>
@@ -22,7 +24,7 @@ function MyApp({ Component, pageProps, router }) {
         <Hamburger />
         <Menu />
         <AnimatePresence mode='wait'>
-          <Component key={router.pathname} {...pageProps} />
+          <Component key={router.route} {...pageProps} />
         </AnimatePresence>
       </MenuContextProvider>
     </>
