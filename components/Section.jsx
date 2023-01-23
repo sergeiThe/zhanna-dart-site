@@ -7,7 +7,7 @@ function Section({ children, className }) {
     return <m.section className={`${className}`}
       initial={{opacity: 0}}
       animate={{opacity: 1}}
-      transition={{duration: 1.5, ease: "easeOut"}}
+      transition={{duration: 0.5, ease: "easeOut"}}
       exit={{opacity: 0}}
     >{children}</m.section>;
 }

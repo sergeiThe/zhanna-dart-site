@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion as m } from 'framer-motion'
 import { pageVariants } from '../animations/homePage'
 import Section from '../components/Section'
 import '../styles/index.scss'
@@ -19,14 +19,22 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="icon" type="image/ico" href="/favicon.ico"/>
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
       </Head>
       <MenuContextProvider>
         <BookButton />
         <Hamburger />
         <Menu />
         <AnimatePresence mode='wait'>
-          <Component {...pageProps} />
+          <m.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            key={router.route}
+          >
+            <Component {...pageProps} />
+          </m.div>;
         </AnimatePresence>
       </MenuContextProvider>
     </>
