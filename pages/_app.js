@@ -14,6 +14,8 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter()
 
+  console.log(router.asPath)
+
   return (
     <>
       <Head>
@@ -24,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         <Hamburger />
         <Menu />
         <AnimatePresence mode='wait'>
-          <Component key={router.route} {...pageProps} />
+          <Component {...pageProps} />
         </AnimatePresence>
       </MenuContextProvider>
     </>

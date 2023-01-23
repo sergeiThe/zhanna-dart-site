@@ -22,7 +22,7 @@ const Contact = () => {
 
     return (
 
-        <Section className={'contact-section'}>
+        <Section className={'contact-section'} key={"/kontakt"}>
 
             <div className='contact-wrapper'>
 

@@ -23,22 +23,22 @@ function Menu() {
             >
                 <nav className="nav">
                     <ul className="nav-list">
-                    <Link href="/" onClick={toggleHandler}>
+                        <Link href="/" onClick={toggleHandler} replace>
                             <li className="nav-item">Hjem</li>
                         </Link>
-                        <Link href="/om-meg" onClick={toggleHandler}>
+                        <Link href="/om-meg" onClick={toggleHandler} replace>
                             <li className="nav-item">Om meg</li>
                         </Link>
-                        <Link href="/arbeid" onClick={toggleHandler}>
+                        <Link href="/arbeid" onClick={toggleHandler} replace>
                             <li className="nav-item">Mitt arbeid</li>
                         </Link>
-                        <Link href="/tjenester" onClick={toggleHandler}>
+                        <Link href="/tjenester" onClick={toggleHandler} replace>
                             <li className="nav-item">Tjenester</li>
                         </Link>
-                        <Link href="/kontakt" onClick={toggleHandler}>
+                        <Link href="/kontakt" onClick={toggleHandler} replace>
                             <li className="nav-item">Kontakt</li>
                         </Link>
-                        <Link target="_blank" rel="noopener noreferrer" href="https://zhannadart.onlinebooq.net/" onClick={toggleHandler}>
+                        <Link target="_blank" rel="noopener noreferrer" href="https://zhannadart.onlinebooq.net/" onClick={toggleHandler} replace>
                             <li className="nav-item">Bestill</li>
                         </Link>
                     </ul>

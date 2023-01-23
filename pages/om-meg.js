@@ -17,7 +17,7 @@ const About = () => {
 
     return (
 
-        <Section className={'about-section'}>
+        <Section className={'about-section'} key={"/om-meg"}>
 
             <div className='about-wrapper'>
 

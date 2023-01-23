@@ -28,7 +28,7 @@ const Work = () => {
     
     return (
 
-        <Section className={'work-section'}>
+        <Section className={'work-section'} key={"/arbeid"}>
 
             <div className='work-wrapper'>
 

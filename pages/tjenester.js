@@ -22,7 +22,7 @@ const Services = () => {
 
     return (
 
-        <Section className={'services-section'}>
+        <Section className={'services-section'} key={"/tjenester"}>
 
             <div className='services-wrapper'>
 
