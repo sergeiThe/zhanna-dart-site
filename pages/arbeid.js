@@ -15,6 +15,16 @@ const Work = () => {
 
     const router = useRouter()
 
+    let sliders = []
+
+    for (let i = 1; i <= 13; i++) {
+        sliders.push(<ImageSlider urlBefore={`/work/${i}b.jpg`} urlAfter={`/work/${i}a.jpg`}/>)    
+    }
+
+    const sliderSection = sliders.map(slider => {
+        return <div key={Math.random()} className='work-images-container'>{slider}</div>
+    })
+    
     
     return (
 
@@ -53,15 +63,7 @@ const Work = () => {
                     </m.div>
 
                 </div>
-                <div className='work-images-container'>
-                    <ImageSlider urlBefore={"/work/3before_c.jpg"} urlAfter={"/work/3after_c.jpg"}/>
-                    <ImageSlider urlBefore={"/work/5before_c.jpg"} urlAfter={"/work/5after_c.jpg"}/>
-                    <ImageSlider urlBefore={"/work/6before_c.jpg"} urlAfter={"/work/6after_c.jpg"}/>
-                    <ImageSlider urlBefore={"/work/7before_c.jpg"} urlAfter={"/work/7after_c.jpg"}/>
-                    <ImageSlider urlBefore={"/work/8before_c.jpg"} urlAfter={"/work/8after_c.jpg"}/>
-              
-                </div>
-
+                {sliderSection}
             </div>
         </Section>
     )
