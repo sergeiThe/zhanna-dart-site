@@ -7,6 +7,18 @@ import { paragraphVariants, btnVariants } from '../animations/aboutPage'
 import Link from 'next/link'
 import ImageSlider from '../components/ImageSlider'
 
+const listVariants = {
+    initialState: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+            delayChildren: 2,
+        },
+    },
+};
+
+
 
 
 const Work = () => {
@@ -18,11 +30,21 @@ const Work = () => {
     let sliders = []
 
     for (let i = 1; i <= 13; i++) {
-        sliders.push(<ImageSlider urlBefore={`/work/${i}b.jpg`} urlAfter={`/work/${i}a.jpg`}/>)    
+        sliders.push(<ImageSlider 
+            urlBefore={`/work/${i}b.jpg`}
+            urlAfter={`/work/${i}a.jpg`}
+            
+            />)    
     }
 
     const sliderSection = sliders.map(slider => {
-        return <div key={Math.random()} className='work-images-container'>{slider}</div>
+        return <m.div 
+            key={Math.random()} 
+            className='work-images-container'
+            initial="initialState"
+            animate="show"
+            variants={listVariants}
+        >{slider}</m.div>
     })
     
     
