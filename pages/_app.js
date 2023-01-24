@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
           <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.3, ease: "easeOut"}}
+            transition={{ duration: 0.3, ease: "easeOut", delay: 0.5}}
             exit={{ opacity: 0 }}
             key={router.route}
           >
