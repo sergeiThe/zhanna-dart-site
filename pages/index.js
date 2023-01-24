@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { Button, MyLink, PageTitle, Paragraph } from '../components/Components'
 import Section from '../components/Section'
 import { BsScissors } from "react-icons/bs"
+import { GiScissors } from "react-icons/gi"
 import { motion as m } from 'framer-motion'
 
 import { bgVariants, titleVariants, iconVariants, btnVariants, paragraphVariants } from '../animations/homePage'
