@@ -25,14 +25,7 @@ export default function Home() {
       >
         <div className='home-inner-wrapper'>
 
-          <m.div
-            className="home-icon"
-            variants={iconVariants}
-            initial="initialState"
-            animate="animateState"
-          >
-            <BsScissors />
-          </m.div>
+          
           <m.div
             className="home-title"
             variants={titleVariants}
@@ -62,3 +55,14 @@ export default function Home() {
     </Section>
   )
 }
+
+/**
+ * <m.div
+            className="home-icon"
+            variants={iconVariants}
+            initial="initialState"
+            animate="animateState"
+          >
+            <BsScissors />
+          </m.div>
+ */
