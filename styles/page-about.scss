@@ -37,6 +37,10 @@
     text-align: left;
 
     padding-bottom: 2rem;
+    @include respond(phone) {
+       
+        padding-top: 7rem;
+    }
 }
 
 .about-paragraph {
