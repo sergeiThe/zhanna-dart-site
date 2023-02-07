@@ -1,0 +1,26 @@
+<!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>http://www.zhanna-dart.no</loc>
+       <lastmod>2023-02-07</lastmod>
+     </url>
+     <url>
+       <loc>http://www.zhanna-dart.no/om-meg</loc>
+       <lastmod>2023-02-07</lastmod>
+     </url>
+     <url>
+       <loc>http://www.zhanna-dart.no/arbeid</loc>
+       <lastmod>2023-02-07</lastmod>
+     </url>
+     <url>
+       <loc>http://www.zhanna-dart.no/tjenester</loc>
+       <lastmod>2023-02-07</lastmod>
+     </url>
+     <url>
+       <loc>http://www.zhanna-dart.no/kontakt</loc>
+       <lastmod>2023-02-07</lastmod>
+     </url>
+     
+   </urlset>
+   </xml>
