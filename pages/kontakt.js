@@ -79,7 +79,8 @@ const Contact = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 4 }}
                     >
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17077.668140234564!2d10.407221193342867!3d63.43633219387926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d3109c262cab9%3A0xfff5897af8760ea2!2sMellomveien%2016%2C%207042%20Trondheim!5e0!3m2!1sen!2sno!4v1671454351698!5m2!1sen!2sno" width={"100%"} height={"100%"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1784.0946960286412!2d10.423466527156128!3d63.438261036400654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d3109ebe59b0f%3A0x36cdc256ef8c012!2sMellomveien%2018A%2C%207042%20Trondheim!5e0!3m2!1sen!2sno!4v1676483163120!5m2!1sen!2sno" width={"100%"} height={"100%"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </m.div>
 
                 </div>
