@@ -1,26 +1,25 @@
-import { useRouter } from 'next/router'
-import { AnimatePresence, motion as m } from 'framer-motion'
-import { pageVariants } from '../animations/homePage'
-import Section from '../components/Section'
-import '../styles/index.scss'
+import {AnimatePresence, motion as m} from 'framer-motion'
+import Head from 'next/head'
+import {useRouter} from 'next/router'
+import Script from 'next/script'
+import BookButton from '../components/BookButton'
 import Hamburger from '../components/Hamburger'
 import Menu from '../components/Menu'
 import MenuContextProvider from '../store/menu-ctx'
-import BookButton from '../components/BookButton'
-import Head from 'next/head'
-import Script from 'next/script'
+import '../styles/index.scss'
 
 
 function MyApp({ Component, pageProps }) {
 
   const router = useRouter()
 
-  console.log(router.asPath)
+  // console.log(router.asPath)
 
   return (
     <>
       <Head>
         <link rel="icon" type="image/ico" href="/favicon.ico" />
+      </Head>
 
         {/*GOOGLE TAG*/}
 
@@ -39,13 +38,8 @@ function MyApp({ Component, pageProps }) {
           f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NV6FBQ5W');`}</Script>
 
-      </Head>
 
-
-
-
-      
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-TKN1VDPJBY"></Script>
+      <Script  strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-TKN1VDPJBY"></Script>
 
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -58,7 +52,6 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       {/*GOOGLE TAG*/}
-
 
       <Script strategy="afterInteractive" src="https://www.googletagmanager.com/ns.html?id=GTM-NV6FBQ5W"></Script>
 
